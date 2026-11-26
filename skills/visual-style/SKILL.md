@@ -10,7 +10,7 @@ Every explanashown answer follows the same contract: **picture first, three line
 
 ## 1. Pick the renderer
 
-1. **Inline visual tool available** (for example `show_widget` in the Claude desktop app; call its `read_me` first if it requires one): draw an SVG diagram inline. This is the default.
+1. **Inline visual tool available** (for example `show_widget` in the Claude desktop app; call its `read_me` first if it requires one): draw an SVG diagram inline. This is the default. When something *moves* (data, requests, events, time), make it an animated HTML+SVG widget with a "Now / Expected" toggle instead of a static picture. Showing the motion beats describing it.
 2. **No inline visual tool** (plain terminal, IDE panel): draw a text diagram inside a fenced code block, using the same layout rules below. Don't use Mermaid, because terminals don't render it.
 
 Never skip the picture because the renderer is limited. A small text diagram still beats a paragraph.
@@ -21,6 +21,8 @@ Never skip the picture because the renderer is limited. A small text diagram sti
 - **At most 7 boxes.** If the real flow is longer, collapse the healthy parts into one box, for example "auth ✓ (3 steps)".
 - **Edge labels carry the data**: write the actual value flowing between boxes when it matters (`"2026-11-25"` → `null`).
 - **Every diagram has exactly one focal point**: the thing the reader came for (the break, the failing assertion, the change).
+- **Assume the reader doesn't know the project.** Every box names where it lives (`file:line` + function) so nobody has to ask "where is that?"
+- **Words are a last resort.** Inside the picture: titles, file:line, and ≤4-word ✓/✗ labels. No sentences, no field tables (trigger / happened / expected). If a reader says "too many words", turn text into motion, color or a toggle; don't just shorten it.
 
 ## 3. Color and marking (same in every skill)
 
