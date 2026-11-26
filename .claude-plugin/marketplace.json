@@ -1,0 +1,14 @@
+{
+  "name": "explanashown",
+  "description": "Visual-first explanation skills for Claude Code.",
+  "owner": {
+    "name": "noaoren95"
+  },
+  "plugins": [
+    {
+      "name": "explanashown",
+      "source": "./",
+      "description": "Visual-first explanations for bugs, tests, improvements and more."
+    }
+  ]
+}

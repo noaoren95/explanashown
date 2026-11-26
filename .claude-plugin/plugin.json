@@ -1,0 +1,7 @@
+{
+  "name": "explanashown",
+  "version": "0.1.0",
+  "description": "Visual-first explanations: Claude shows a diagram of what happened before writing any paragraph. One skill per use case (bugs, tests, improvements, ...).",
+  "author": { "name": "noaoren95" },
+  "keywords": ["explain", "visualize", "diagram", "debugging", "root-cause"]
+}
